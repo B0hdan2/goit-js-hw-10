@@ -20,7 +20,7 @@ const hoursEl = timer.querySelector('[data-hours]');
 const minutesEl = timer.querySelector('[data-minutes]');
 const secondsEl = timer.querySelector('[data-seconds]');
 
-let userSelectedDate = null;
+let userSelectedDate;
 
 startBtn.disabled = true;
 
@@ -45,8 +45,6 @@ const options = {
 
         backgroundColor: '#ef4040',
         position: 'topRight',
-
-        transitionIn: 'bounceInLeft',
       });
     }
 
@@ -71,7 +69,12 @@ startBtn.addEventListener('click', () => {
     if (diff <= 0) {
       clearInterval(intervalId);
       input.disabled = false;
-      return;
+      iziToast.success({
+        title: 'OK',
+        message: 'your time has come!',
+        position: 'topRight',
+      });
+      return
     }
 
     const time = convertMs(diff);
