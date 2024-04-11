@@ -5,13 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>snackbar</title>
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
     
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-807266a7.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-9d21bfda.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
+
+    <div class="container">
+      <form class="form">
+        <label class="form__label">
+          Delay (ms)
+          <input class="form__input" type="number" name="delay" required />
+        </label>
+      
+        <fieldset class="fieldset">
+          <legend class="fieldset__legend">State</legend>
+          <label class="fieldset__label">
+            <input class="fieldset__input" type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__input" type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+      
+        <button class="form__button" type="submit">Create notification</button>
+      </form>
+    </div>
+      
     </section>
     
   </body>
