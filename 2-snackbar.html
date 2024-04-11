@@ -16,35 +16,48 @@
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
     <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-9d21bfda.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-5f34195b.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
 
-    <div class="container">
-      <form class="form">
-        <label class="form__label">
-          Delay (ms)
-          <input class="form__input" type="number" name="delay" required />
-        </label>
-      
-        <fieldset class="fieldset">
-          <legend class="fieldset__legend">State</legend>
-          <label class="fieldset__label">
-            <input class="fieldset__input" type="radio" name="state" value="fulfilled" required />
-            Fulfilled
+      <div class="container">
+        <form class="form">
+          <label class="form__label">
+            Delay (ms)
+            <input class="form__input" type="number" name="delay" required />
           </label>
-          <label class="fieldset__label">
-            <input class="fieldset__input" type="radio" name="state" value="rejected" required />
-            Rejected
-          </label>
-        </fieldset>
-      
-        <button class="form__button" type="submit">Create notification</button>
-      </form>
-    </div>
-      
+
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">State</legend>
+            <label class="fieldset__label">
+              <input
+                class="fieldset__input"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
+              Fulfilled
+            </label>
+            <label class="fieldset__label">
+              <input
+                class="fieldset__input"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button class="form__button" type="submit">
+            Create notification
+          </button>
+        </form>
+      </div>
     </section>
     
   </body>
