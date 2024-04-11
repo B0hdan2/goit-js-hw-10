@@ -33,7 +33,6 @@ const options = {
     if (selectedDates[0] < new Date()) {
       return iziToast.error({
         icon: 'custom-icon',
-        iconColor: '#fff',
 
         title: 'Error',
         titleColor: '#fff',
@@ -74,7 +73,7 @@ startBtn.addEventListener('click', () => {
         message: 'your time has come!',
         position: 'topRight',
       });
-      return
+      return;
     }
 
     const time = convertMs(diff);

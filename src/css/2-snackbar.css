@@ -16,11 +16,14 @@
     height: 40px;
     border-radius: 4px;
     border: 1px solid #808080;
+    margin-bottom: 16px;
     padding-left: 5px;
 }
+
 .form__input:hover {
     border: 1px solid #000;
 }
+
 .form__input:focus {
     border: 1px solid #4e75ff;
     outline: none;
@@ -32,7 +35,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .fieldset {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 360px;
     height: 64px;
     border-radius: 4px;
@@ -40,8 +43,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
     margin-bottom: 24px;
 }
-.fieldset:hover{
-    border: 1px solid #000;;
+
+.fieldset:hover {
+    border: 1px solid #000;
+    ;
 }
 
 .fieldset__legend {
